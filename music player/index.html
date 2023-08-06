@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MUSIC PLAYER</title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">GENRE</a></li>
+                <li><a href="#">MY PLAYLIST</a></li>
+                <li><a href="#">ARTIST</a></li>
+                <li><a href="#">MY FAVOURITES</a></li>
+            </ul>
+        </div>
+        <div class="columns">
+            <div class="leftcol">
+                <h1>A MaGiC <br> BeYOnD aLL <br> wE Do HeRe!</h1>
+            </div>
+            <div class="rightcol">
+                <p> Click To Play</p>
+                <!-- width="60" height="60"-->
+                <img src="playbbg.jpeg" id="icon" >
+            </div>
+        </div>
+    </div>
+    <audio id="song">
+        <source src="Gangsta's Paradise.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        var song = document.getElementById("song");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            if(song.paused){
+                song.play();
+                icon.src = "pausebbg.jpeg"
+            }
+            else{
+                song.pause();
+                icon.src = "playbbg.jpeg";
+            }
+        }
+    </script>
+</body>
+</html>

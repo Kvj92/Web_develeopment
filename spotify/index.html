@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - A world beyond magic is here</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="music"> <img src="spotifyicon.jpg" alt="Spotify">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+
+        </ul>
+    </nav>
+    <div class="container">
+        
+        <div class="songList">
+            <h1>Best of Imagine Dragons</h1>
+            <div class="songcontent">
+
+                <!-- 1st song-->
+                <div class="songItem">
+                    <img src="cover/1.jpg" alt="1" >
+                    <span class="songName">Believer</span>
+                    <span class="songplaylist"><span class="time">3.36 <i id="0" class="far songItemPlay fa-play-circle""></i></span></span>   
+                </div>
+                <!-- 2nd song-->
+                <div class="songItem">
+                    <img src="cover/2.jpg" alt="2" >
+                    <span class="songName">Bad Liar</span>
+                    <span class="songplaylist"><span class="time">4.44 <i id="1" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <!-- 3rd song-->
+                <div class="songItem">
+                    <img src="cover/3.jpg" alt="3" >
+                    <span class="songName">Demons</span>
+                    <span class="songplaylist"><span class="time">3.56 <i id="2" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <!-- 4th song-->
+                <div class="songItem">
+                    <img src="cover/4.jpg" alt="4" >
+                    <span class="songName">Radioactive</span>
+                    <span class="songplaylist"><span class="time">4.21 <i id="3" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <!-- 5th song-->
+                <div class="songItem">
+                    <img src="cover/5.jpg" alt="5" >
+                    <span class="songName">Thunder</span>
+                    <span class="songplaylist"><span class="time">3.24 <i id="4" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <!-- 6th song-->
+                <div class="songItem">
+                    <img src="cover/6.jpg" alt="6" >
+                    <span class="songName">Whatever it Takes</span>
+                    <span class="songplaylist"><span class="time">3.40 <i id="5" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="SongBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="progressbar" value="0" min="0" max="100" color:blue>
+        <div class="icons">
+            <i class="fa-solid fa-backward-fast" id="first"></i> 
+            <i class="fa-solid fa-backward-step" id="prev"></i>
+            <i class="fa-solid fa-play" id="masterplay"></i>
+            <i class="fa-solid fa-forward-step" id="next"></i>
+            <i class="fa-solid fa-forward-fast" id="last"></i> 
+        </div>
+        <div class="songinfo">
+            <img src="playing.gif" width="70px" alt="" id="gif"> <span id="masterSongName">Believer - Imagine Dragons</span>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/634a454664.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

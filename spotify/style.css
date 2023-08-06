@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: blanchedalmond;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 60px;
+    background-color: black;
+    color: blanchedalmond;
+
+}
+
+nav ul li{
+    padding: 0 10px;
+}
+
+.music{
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.music img{
+    width: 45px;
+    padding: 0 9px;
+}
+.container{
+    min-height: 65vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 20px auto;
+    width:75%;
+    border-radius: 15px;
+    padding: 25px;
+    background-image: url('imagine\ dragonsre.1jpg.jpg');
+}
+.bottom{
+    position:sticky;
+    height: 100px;
+    color: white;
+    background-color: black;
+    
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.icons{
+    margin-top:20px;
+}
+
+.icons i{
+    cursor: pointer;
+    padding-left: 10px;
+    
+}
+#progressbar{
+    cursor: pointer;
+    width:70vw;
+}
+.songcontent{
+    margin-top: 50px;
+}
+
+.songItem{
+    height: 40px;
+    display: flex;
+    background-color: white;
+    color:black;
+    margin: 10px 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    
+}
+
+.songItem img{
+    font-family: 'Varela Round', sans-serif;
+    width: 35px;
+    margin: 0 20px;
+    border-radius: 40px;
+}
+
+
+
+
+.time{
+    margin: 0 20px;
+    
+}
+
+.time i{
+    cursor: pointer;
+    padding :5px;
+}
+
+.songinfo{
+    font-family: 'Varela Round', sans-serif;
+    padding: 33px;
+    position: absolute;
+    left:15vw;
+}
+.songinfo img{
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+}
